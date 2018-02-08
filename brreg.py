@@ -20,6 +20,6 @@ def name(query):
     except KeyError:
         print '[-][NO DATA]'
     
-
-search = raw_input('\n[*]Firmanavn: ')
-name(search)
+if __name__ == '__main__':
+    search = raw_input('\n[*]Firmanavn: ')
+    name(search)
