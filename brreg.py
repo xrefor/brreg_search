@@ -27,7 +27,7 @@ def name(query):
         except KeyError:
             print '[-][NO DATA]'
     else:
-        print '[-]Something went wrong...'
+        print '[-]Noe gikk galt...'
     
 if __name__ == '__main__':
     search = raw_input('\n[*]Firmanavn: ')
