@@ -25,7 +25,7 @@ def name(query):
             print '[!]Mer info:', gotoUrl,'\n'
             
         except KeyError:
-            print '[-][NO DATA]'
+            print '[-][INGEN DATA]'
     else:
         print '[-]Noe gikk galt...'
     
