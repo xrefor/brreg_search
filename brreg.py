@@ -22,6 +22,8 @@ def name(query):
             print '[+]Reg.Dato:', dp['registreringsdatoEnhetsregisteret']
             print '[+]F.adr:', adrF['adresse']+',', adrF['postnummer'], adrF['poststed']
             print '[+]F.type:', dp['orgform']['beskrivelse']
+            print '[+]Ansatte:', dp['antallAnsatte']
+            print '[+]Mva.Reg:', dp['registrertIMvaregisteret']
             print '\n'
             print '[!]Mer info:', gotoUrl,'\n'
             
