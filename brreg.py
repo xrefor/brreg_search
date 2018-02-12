@@ -12,14 +12,15 @@ def name(query):
             json_obj = urllib2.urlopen(url)
             data = json.load(json_obj)
             dp = data['data'][0]
-            adrF = data['data'][0]['forretningsadresse']
+            adrF = dp['forretningsadresse']
             gotoUrl = 'https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr={0}'.format(dp['organisasjonsnummer'])
 
             #All the prints
             print '\n'
             print '[+]Firmanavn:', dp['navn']
             print '[+]Org.Nr:', dp['organisasjonsnummer']
-            print '[+]F.adr:', adrF['adresse'], adrF['postnummer'], adrF['poststed']
+            print '[+]Reg.Dato:', dp['registreringsdatoEnhetsregisteret']
+            print '[+]F.adr:', adrF['adresse']+',', adrF['postnummer'], adrF['poststed']
             print '[+]F.type:', dp['orgform']['beskrivelse']
             print '\n'
             print '[!]Mer info:', gotoUrl,'\n'
