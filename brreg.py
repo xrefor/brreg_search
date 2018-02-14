@@ -24,6 +24,7 @@ def name(query):
             print '[+]F.type:', dp['orgform']['beskrivelse']
             print '[+]Ansatte:', dp['antallAnsatte']
             print '[+]Mva.Reg:', dp['registrertIMvaregisteret']
+            print '[+]Frt.Reg:', dp['registrertIForetaksregisteret']
             print '\n'
             print '[!]Mer info:', gotoUrl,'\n'
             
