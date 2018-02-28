@@ -20,7 +20,7 @@ def name(query):
             print '[+]Firmanavn:', dp['navn']
             print '[+]Org.Nr:', dp['organisasjonsnummer']
             print '[+]Reg.Dato:', dp['registreringsdatoEnhetsregisteret']
-            print '[+]F.adr:', adrF['adresse']+',', adrF['postnummer'], adrF['poststed'], adF['land']
+            print '[+]F.adr:', adrF['adresse']+',', adrF['postnummer'], adrF['poststed']+',', adrF['land']
             print '[+]F.type:', dp['orgform']['beskrivelse']
             print '[+]Ansatte:', dp['antallAnsatte']
             print '[+]Mva.Reg:', dp['registrertIMvaregisteret']
